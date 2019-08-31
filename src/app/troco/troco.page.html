@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Troco</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">Dinheiro</ion-label>
+        <ion-input type="number" [(ngModel)]="Dinheiro"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label position="floating">Valor compra</ion-label>
+          <ion-input type="number" [(ngModel)]="Valorcompra"></ion-input>
+        </ion-item>
+      
+        <ion-button (click)="enviadados()" expand="full"> Calcular troco </ion-button>
+        <ion-button (click)="closeModal()" expand="full" color="danger"> Fechar troco </ion-button>
+
+</ion-content>
